@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Cuber Aleatório</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .banner {
+            background: linear-gradient(135deg, #667eea 0%, #3222be 100%);
+            height: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        .banner:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .content-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .social-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .social-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header with Title -->
+    <header class="bg-white shadow-sm py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-indigo-800 animate-fade-in">
+                Um Cuber Aleatório
+            </h1>
+            <p class="text-center text-gray-600 mt-2">Conheça um pouco mais sobre o canal</p>
+        </div>
+    </header>
+    
+    <!-- Banner Space -->
+    <div class="banner flex items-center justify-center my-8 rounded-lg mx-4 md:mx-10 overflow-hidden">
+        <h2 class="text-white text-2xl md:text-3xl font-semibold text-center px-4">
+            Minha história com o CUBO MÁGICO
+        </h2>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 my-12">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+            <!-- Text Content -->
+            <div class="content-card bg-white p-8 rounded-xl shadow-md max-w-2xl flex-1">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre Mim</h2>
+                <p class="text-gray-600 mb-4">
+                   Em 2022 ganhei meu primeiro cubo mágico de um amigo, ali, decidi que aprenderia a resolver.
+                   Após uns dias, eu tinha aprendido a resolver com ajuda de vídeos da internet, passaram-se uns meses, eu queria poder ensinar outras pessoas também, com esse intuito, criei o canal Um Cuber Aleatório, no começo apenas com vídeos simples, uns 4 ou 5 cubos na coleção, o tempo foi passando, fui ganahando e comprando mais cubos, busquei evoluir, e hoje em dia, ja estive em duas competições, tenho quase 50 cubos mágicos de tipos diferentes, monto em menos de 20 segundos, e continuo buscando crescer no YouTube e evoluir mais na modalidade. 
+                </p>
+                <p class="text-gray-600 mb-4">
+                    
+                </p>
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                    Saiba Mais
+                </button>
+            </div>
+            
+            <!-- Small Image -->
+            <div class="content-card flex-1 max-w-md">
+                <img src="Logo Perfil.jpg" 
+                     alt="Imagem ilustrativa" 
+                     class="w-full h-auto rounded-xl shadow-md object-cover">
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer with Social Buttons -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center">
+                <h3 class="text-xl font-semibold mb-6">Siga-nos nas redes sociais</h3>
+                
+                <div class="flex space-x-6">
+                    <!-- YouTube Button -->
+                    <a href="#" class="social-btn bg-red-600 hover:bg-red-700 w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                    
+                    <!-- Instagram Button -->
+                    <a href="#" class="social-btn bg-gradient-to-r from-purple-500 to-pink-500 w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                
+                <p class="mt-6 text-gray-400 text-sm">
+                    © 2023 Meu Site Moderno. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            // You can add more JavaScript functionality here if needed
+            console.log('Site carregado com sucesso!');
+        });
+    </script>
+</body>
+</html>
